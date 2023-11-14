@@ -1,0 +1,338 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--background);
+    transition: 0.3s;
+}
+
+.notes {
+    display: flex;
+    height: 100%;
+ 
+}
+
+.notes * {
+    font-family: 'Inter', sans-serif;
+}
+
+.notes__sidebar {
+    border-right: 2px solid var(--clr-sidebar);
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+    font-family: 'Inter', sans-serif;
+}
+
+.notes__add {
+    background: var( --clr-add-note);
+    border: none;
+    border-radius: 13px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25em;
+    
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+}
+
+.notes__add:hover {
+    background: #2E2E2E;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+}
+
+.notes__list-item {
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 0.1rem ;
+    border-color: var(--clr-sidebar);
+    border-bottom-style: groove;
+    transition: 0.3s;
+  
+}
+
+.notes__list-item:hover {
+    transition: 0.5s;
+    background: var(--clr-hover);
+    border-radius: 10px;
+
+}
+
+.notes__list-item--selected {
+    background: var(--clr-select);
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    border-bottom: none;
+}
+
+.notes__small-title,
+.notes__small-updated {
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    color: var(--foreground);
+    transition: 0.3s;
+}
+
+.notes__small-title {
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    color: var(--foreground);
+    transition: 0.3s;
+}
+
+.notes__small-body {
+    padding: 0 10px;
+    font-family: 'Inter', sans-serif;
+    color: var(--foreground);
+    transition: 0.3s;
+}
+
+.notes__small-updated {
+    font-size: small;
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    color: #727272;
+}
+
+.notes__preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.notes__title,
+.notes__body {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: 0.3s;
+}
+
+.notes__title {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.notes__body {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display:900");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-light: black;
+  --clr-dark: #C6C6C6;
+  --clr-primary: #dbffa2;
+  --clr-secondary: #c3fcf2;
+  --clr-accent: #ff7750;
+  --img-bg: invert(1);
+  --form-bg: #1E1E1E;
+  --clr-placeholder: #DADADA;
+  --clr-button: white;
+  --clr-dados: #2D2D2D;
+  --clr-sidebar: #2C2C2C;
+  --clr-hover: #111111;
+  --clr-select: #222222;
+  --clr-add-note: #2C2C2C; 
+  
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
+  --ff-title: "Playfair Display", serif;
+  --ff-body: "Assistant", sans-serif;
+}
+
+.darkmode {
+  --clr-light: #1f1f1f;
+  --clr-dark:  #FFFFFF;
+  --clr-primary: #202302;
+  --clr-secondary: #00100d;
+  --clr-accent: #ff7750;
+  --img-bg: invert(0);
+  --form-bg: #EEEEEE;
+  --clr-placeholder: #707070;
+  --clr-button: black;
+  --clr-dados: #F9F9F9;
+  --clr-sidebar: #E2E2E2;
+  --clr-hover: #F6F6F6;
+  --clr-select: #EBEBEB;
+  --clr-add-note: black;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+}
+nav {
+    border-bottom: 2px solid var(--clr-sidebar);
+    background-color: var(--background);
+    transition: 0.3s;
+
+}
+
+img {
+    filter: var(--img-bg);
+    transition: 0.3s;
+}
+
+#nav {
+    padding-right: 40px;
+    color: var(--foreground);
+}
+
+#background {
+    background-color: var(--background);
+    transition: 0.3s;
+}
+
+#logo {
+    filter: var(--img-bg);
+    transition: 0.3s;
+}
+
+#titulo {
+    color: var(--foreground);
+    transition: 0.3s;
+}
+
+#sub {
+    color: var(--foreground);
+    transition: 0.3s;
+}
+
+
+
+
+input[type=email] {
+    background-color: var(--form-bg);
+    border-color: white;
+    border-width: 1px;
+    transition: 0.3s;
+    
+    
+  }
+
+input[type=email]::placeholder {
+    color: var(--clr-placeholder);
+    transition: 0.3s;
+}
+
+
+input[type=password] {
+    background-color: var(--form-bg);
+    border-color: white;
+    border-width: 1px; 
+    transition: 0.3s;
+    
+  }
+
+input[type=password]::placeholder {
+    color: var(--clr-placeholder);
+    transition: 0.3s;
+}
+
+input[type=number] {
+    background-color: var(--form-bg);
+    border-color: white;
+    border-width: 1px; 
+    transition: 0.3s;
+    
+  }
+
+input[type=number]::placeholder {
+    color: var(--clr-placeholder);
+    transition: 0.3s;
+}
+
+input[type=date] {
+    background-color: var(--form-bg);
+    border-color: white;
+    border-width: 1px; 
+    transition: 0.3s;
+    
+  }
+
+  input[type=date]::placeholder {
+    color: var(--clr-placeholder);
+    transition: 0.3s;
+  }
+#conta {
+    color: var(--clr-button);
+    border-color: var(--clr-button);
+    transition: 0.3s;
+}
+
+#select {
+    background-color: var(--form-bg);
+    border-color: white;
+    border-width: 1px; 
+    transition: 0.3s;
+}
+
+#dados {
+    background-color: var(--clr-dados);
+}
+
+
+#buttons {
+    padding-right: 60px;
+    
+}
+
+
+#editar {
+    color: var(--clr-button);
+    border-color: var(--clr-button);
+    transition: 0.3s;
+}
+
+#editar:hover {
+    color: white;
+}
+
+
+
+
+
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1.26em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  border: 2px solid;
+  padding: 4px 8px 8px 8px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
