@@ -3,7 +3,7 @@
 # PrivNotes – Sistema de Notas em PHP, JavaScript e MySQL
 
 PrivNotes é um projeto de conclusão do curso de Desenvolvimento de Sistemas - SENAC.  
-O foco principal foi criar um CRUD completo em PHP, com suporte a JavaScript para interações dinâmicas, e um banco de dados MySQL funcional. A estilização foi feita em HTML5 e CSS3.
+O foco principal foi criar um CRUD completo em PHP, com suporte a JavaScript para interações dinâmicas, e um banco de dados MySQL funcional. A estilização foi feita em HTML5 e CSS3 utilizando Bootstrap.
 
 ---
 
