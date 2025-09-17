@@ -1,4 +1,4 @@
-![PHP](https://img.shields.io/badge/PHP-7.x-blue) ![MySQL](https://img.shields.io/badge/MySQL-5.x-blue) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow) ![License](https://img.shields.io/badge/license-MIT-green)
+![PHP](https://img.shields.io/badge/PHP-7.x-blue) ![MySQL](https://img.shields.io/badge/MySQL-5.x-blue) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 
 # PrivNotes – Sistema de Notas em PHP, JavaScript e MySQL
 
