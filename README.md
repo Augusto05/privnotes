@@ -14,7 +14,7 @@ O foco principal foi criar um CRUD completo em PHP, com suporte a JavaScript par
 - Criação, edição e exclusão de notas  
 - Armazenamento temporário de rascunhos via sessão  
 - Modo noturno com memória de preferência (localStorage + JS)  
-- Banco de dados normalizado com tabelas
+- Banco de dados normalizado com tabelas (cópia disponível em exemplo.sql)
 
 ---
 
