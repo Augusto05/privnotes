@@ -16,16 +16,12 @@ O foco principal foi criar um CRUD completo em PHP, com suporte a JavaScript par
 - Modo noturno com memória de preferência (localStorage + JS)  
 - Banco de dados normalizado com tabelas (cópia disponível em exemplo.sql)
 
----
-
 ## 🛠 Tecnologias
 
 - PHP 7.x ou superior  
 - MySQL 5.x ou superior  
 - JavaScript (ES6)  
 - HTML5 e CSS3
-
----
 
 ## 🚀 Passos de Instalação
 
